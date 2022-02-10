@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="0" failed="1" skipped="3">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-04T12:44:33Z" name="Default suite" finished-at="2022-01-04T12:45:16Z" duration-ms="43326">
+    <groups>
+      <group name="Regression">
+        <method signature="PeopleHr_Test.Add_Product(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" name="Add_Product" class="com.people.main.PeopleHr_Test"/>
+        <method signature="PeopleHr_Test.Checkout_Product(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" name="Checkout_Product" class="com.people.main.PeopleHr_Test"/>
+        <method signature="PeopleHr_Test.Logout(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" name="Logout" class="com.people.main.PeopleHr_Test"/>
+        <method signature="PeopleHr_Test.Sauce_Login_Dashboard(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" name="Sauce_Login_Dashboard" class="com.people.main.PeopleHr_Test"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2022-01-04T12:44:33Z" name="Default test" finished-at="2022-01-04T12:45:16Z" duration-ms="43326">
+      <class name="com.people.main.PeopleHr_Test">
+        <test-method is-config="true" signature="Beforeclass(org.testng.ITestContext)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:44:33Z" name="Beforeclass" finished-at="2022-01-04T12:44:42Z" duration-ms="8500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4422dd48]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforeclass -->
+        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:44:45Z" name="report" finished-at="2022-01-04T12:44:45Z" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Add_Product status=FAILURE method=PeopleHr_Test.Add_Product(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method signature="Add_Product(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:44:45Z" name="Add_Product" data-provider="fetchData" finished-at="2022-01-04T12:45:15Z" duration-ms="30071" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{dataset_0={password=secret_sauce, url=https://www.saucedemo.com/, username=standard_user}, dataset_1={password=secret_sauce, url=https://www.saucedemo.com/, username=standard_user}}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.people.main.PeopleHr_Test.Add_Product(PeopleHr_Test.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Product -->
+        <test-method is-config="true" signature="endreport()[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:15Z" name="endreport" finished-at="2022-01-04T12:45:15Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endreport -->
+        <test-method is-config="true" signature="stopexecution(org.testng.ITestResult)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:15Z" name="stopexecution" finished-at="2022-01-04T12:45:16Z" duration-ms="1383" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Add_Product status=FAILURE method=PeopleHr_Test.Add_Product(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Previous Script Got Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Previous Script Got Failed
+at com.people.utils.DriverInitialize.stopexecution(DriverInitialize.java:172)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopexecution -->
+        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="report" finished-at="2022-01-04T12:45:16Z" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=PeopleHr_Test.Checkout_Product(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method signature="Checkout_Product(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="Checkout_Product" data-provider="fetchData" finished-at="2022-01-04T12:45:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Previous Script Got Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Previous Script Got Failed
+at com.people.utils.DriverInitialize.stopexecution(DriverInitialize.java:172)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkout_Product -->
+        <test-method is-config="true" signature="endreport()[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="endreport" finished-at="2022-01-04T12:45:16Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endreport -->
+        <test-method is-config="true" signature="stopexecution(org.testng.ITestResult)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="stopexecution" finished-at="2022-01-04T12:45:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopexecution -->
+        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="report" finished-at="2022-01-04T12:45:16Z" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=PeopleHr_Test.Logout(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method signature="Logout(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="Logout" data-provider="fetchData" finished-at="2022-01-04T12:45:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Previous Script Got Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Previous Script Got Failed
+at com.people.utils.DriverInitialize.stopexecution(DriverInitialize.java:172)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="endreport()[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="endreport" finished-at="2022-01-04T12:45:16Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endreport -->
+        <test-method is-config="true" signature="stopexecution(org.testng.ITestResult)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="stopexecution" finished-at="2022-01-04T12:45:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopexecution -->
+        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="report" finished-at="2022-01-04T12:45:16Z" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=PeopleHr_Test.Sauce_Login_Dashboard(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method signature="Sauce_Login_Dashboard(java.util.Map)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="Sauce_Login_Dashboard" data-provider="fetchData" finished-at="2022-01-04T12:45:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Previous Script Got Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Previous Script Got Failed
+at com.people.utils.DriverInitialize.stopexecution(DriverInitialize.java:172)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sauce_Login_Dashboard -->
+        <test-method is-config="true" signature="endreport()[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="endreport" finished-at="2022-01-04T12:45:16Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endreport -->
+        <test-method is-config="true" signature="stopexecution(org.testng.ITestResult)[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="stopexecution" finished-at="2022-01-04T12:45:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopexecution -->
+        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:com.people.main.PeopleHr_Test@63611043]" started-at="2022-01-04T12:45:16Z" name="CloseDriver" finished-at="2022-01-04T12:45:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+      </class> <!-- com.people.main.PeopleHr_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

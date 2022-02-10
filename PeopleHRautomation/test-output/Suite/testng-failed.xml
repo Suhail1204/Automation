@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.people.utils.TestListener"/>
+  </listeners>
+  <test thread-count="1" name="Regression7(failed)">
+    <classes>
+      <class name="com.people.main.PeopleHr_Test">
+        <methods>
+          <include name="Beforeclass"/>
+          <include name="Logout"/>
+          <include name="endreport"/>
+          <include name="Checkout_Product"/>
+          <include name="Add_Product" invocation-numbers="0"/>
+          <include name="stopexecution"/>
+          <include name="Sauce_Login_Dashboard"/>
+          <include name="report"/>
+          <include name="CloseDriver"/>
+        </methods>
+      </class> <!-- com.people.main.PeopleHr_Test -->
+    </classes>
+  </test> <!-- Regression7(failed) -->
+</suite> <!-- Failed suite [Suite] -->

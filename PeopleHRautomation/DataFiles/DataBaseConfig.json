@@ -1,0 +1,15 @@
+{
+	"DbCredentials":{
+	"HostName":"127.0.0.1",
+	"Port":"3306",
+	"Database":"sauce_demo",
+	"DbUsername":"root",
+	"DbuserPassword":"Test123#"
+	},
+
+	"Sql Query":{
+	"SelectQueryName_Login":"SELECT * FROM sauce_demo.login;",
+	"SelectQueryName_Checkout":"SELECT * FROM sauce_demo.checkout"
+	"SelectQueryname_Description":"SELECT * FROM sauce_demo.description;"
+	}
+}

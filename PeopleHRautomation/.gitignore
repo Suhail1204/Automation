@@ -1,0 +1,14 @@
+*.class
+*.log
+*.jar
+target/
+dist/
+Thumbs.db
+*.project
+*.html
+*.classpath
+*.txt
+/.settings/
+.settings/
+
+
